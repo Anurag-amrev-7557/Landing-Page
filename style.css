@@ -26,7 +26,7 @@ html {
     border: none;
     outline: none;
     backdrop-filter: blur(10px);
-    background-color: rgba(255,255,255,0.1);
+    background: rgba(246, 54, 59, 0.7);
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     box-shadow: rgb(0, 0, 0) 0px 7px 20px -10px;
@@ -39,6 +39,7 @@ html {
     transition: all 0.5s ease;
     margin-bottom: 6rem;
     user-select: none;
+    font-weight: 600;
 }
 
 .move div:hover {
@@ -70,11 +71,10 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     margin: 0;
-    background-color: #f8f7f4;
-    background-color: #023047;
+    background-color: #272b29;
     border-top: 1px solid rgb(255, 255, 255, 0.3);
 }
 
@@ -106,9 +106,8 @@ body {
 
 .head .img img {
     height: 2rem;
-    width: 2rem;
+    margin-right: 0.2rem;
     cursor: pointer;
-    padding-right: 0.5rem;
 }
 
 .name {
@@ -121,6 +120,7 @@ body {
     text-decoration: none;
     padding-right: 0.5rem;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .head .outer {
@@ -141,10 +141,11 @@ body {
     align-items: center;
     font-size: 16px;
     font-family: "Varela Round", sans-serif;
-    color: #2f2e31;
-    color: rgb(255, 255, 255, 0.8);
+    color: #fff;
     cursor: pointer;
     letter-spacing: 1px;
+    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .outer {
@@ -160,8 +161,13 @@ body {
 
 .sols:hover .fa-chevron-down{
     transform: rotate(180deg);
+    color: rgb(246, 54, 59);
+    filter: invert(0);
 }
 
+.outer div span:hover {
+    color: #f6363b;
+}
 .head .outer div .sols{
     display: flex;
     align-items: center;
@@ -194,7 +200,7 @@ body {
     height: 2.813rem;
     outline: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(246, 54, 59, 0.7);
     box-shadow: rgb(0, 0, 0) 0px 7px 20px -10px;
     cursor: pointer;
     z-index: 0;
@@ -206,13 +212,16 @@ body {
     font-family: "Varela Round", sans-serif;
     letter-spacing: 1px;
     transition: all 0.35s ease;
+    font-weight: 500;
+    border: 1px solid transparent;
 }
 
 .btn div:hover {
-    transform: scale(1.018);
+    transform: scale(1.05);
     box-shadow: rgb(0, 0, 0) 0px 7px 20px -10px;   
     background-color: rgba(255,255,255,0.23);
     color: #fff;
+    border: 1px solid #f6363b;
 }
 
 .over {
@@ -244,7 +253,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     user-select: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
 }
 
 .para {
@@ -258,7 +267,7 @@ body {
 
 .para p {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #f6363b;
     line-height: 2rem;
 }
 
@@ -292,7 +301,7 @@ body {
     width: 52.875rem;
     height: 25.188rem;
     display: flex;
-    background-color: rgb(160, 160, 160, 0.2);
+    background-color: rgba(31, 34, 30, 0.65);
     backdrop-filter: blur(30px);
     justify-content: center;
     margin: 10rem 0;
@@ -346,7 +355,7 @@ body {
     box-shadow: rgb(0, 0, 0) 0px 7px 20px -10px;
     color: #fff;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.2);
+    background-color: #f6363b;;
     border-radius: 80px;
     justify-content: center;
     align-items: center;
@@ -365,8 +374,8 @@ body {
 .btn2 span:hover {
     text-shadow: 0 0 30px #000;
     transform: scale(1.028);
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgb(255, 255, 255, 0.23);
+    color: #fff;
+    background-color: #f6363b;;
     backdrop-filter: blur(10px);
 }
 
@@ -381,7 +390,7 @@ body {
     opacity: 0;
     transform: translateY(40px);
     transition: transform 0.7s ease-out, opacity 0.7s ease-out;
-    background-color: rgb(160, 160, 160, 0.2);
+    background-color: rgba(31, 34, 30, 0.65);
     backdrop-filter: blur(30px);
 }
 
@@ -452,7 +461,7 @@ body {
 .bar {
     width: 5.673rem;
     height: 0.1rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #f6363b;
     border-radius: 5px;
     transition: all 0.4s ease;
 }
@@ -478,6 +487,7 @@ body {
     height: 44.75rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 10px 36px -18px inset;
     backdrop-filter: blur(60px);
+    background-color: rgba(31, 34, 30, 0.75);
 }
 
 .foot {
@@ -498,10 +508,8 @@ body {
 
 .logo img{
     width: 3.375rem;
-    height: 3.375rem;
     opacity: 0.9;
     user-select: none;
-    filter: invert();
     margin-right: 0.5rem;
 }
 
@@ -624,6 +632,7 @@ body {
     cursor: pointer;
     font-family: sans-serif;
     font-weight: 600;
+    color: #f6363b;
 }
 
 .terms #cookies {
@@ -634,6 +643,11 @@ body {
     margin-right: 1.5rem;
     cursor: pointer;
     font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+#cookies div:hover {
+    color: #f6363b;
 }
 
 .terms i {
@@ -652,7 +666,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: #f6363b;;
     transition: all 0.5s ease;
 }
 
@@ -680,7 +694,7 @@ body {
     align-items: center;
     color: rgba(255, 255, 255, 0.8);
     justify-content: center;
-    background-color: rgb(160, 160, 160, 0.2);
+    background-color: rgba(31, 34, 30, 0.65);
     backdrop-filter: blur(30px);
 }
 
@@ -731,8 +745,8 @@ body {
 }
 
 #im {
-    height: 4.25rem;
-    width: 4.25rem;
+    height: 3.25rem;
+    width: 3.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -740,17 +754,39 @@ body {
     transition: all 0.5s ease;
     border-radius: 100%;
     user-select: none;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        width: 0;
+        height: 0;
+        border-radius: 0;
+    }
+    100% {
+        width: 4.25rem;
+        height: 4.25rem;
+        border-radius: 100%;
+    }
 }
 
 .open-space:hover #im, .health:hover #im, .summer:hover #im, .community:hover #im {
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;
-    border-radius: 15px;
-    height: 4.25rem;
-    width: 4.25rem;
+    box-shadow: rgba(0, 0, 0, 0.1bnnt9) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;
+    animation: fadeIn 0.3s ease;
+    background-color: #f6363b;
+}
+
+.open-space:hover #open, .health:hover #fitness, .summer:hover #hot, .community:hover #society {
+    color: #f6363b;
+}
+
+.open-space:hover #im img, .health:hover #im img, .summer:hover #im img, .community:hover #im img {
+    scale: 1.1;
 }
 
 #im img {
     filter: invert();
+    transition: all 1s ease;
 }
 
 .relativeimage {
@@ -812,3 +848,120 @@ body {
 	}
 }
 
+
+@media screen and (max-width: 480px) {
+    .list, .btn {
+        display: none;
+    }
+
+    .img {
+        scale: 0.8;
+        position: absolute;
+        top: 1rem;
+        left: -2rem;
+    }
+
+    .msg {
+        margin-top: -3rem;
+        width: 50rem;
+        scale: 0.59;
+    }
+
+    .msg span {
+        width: 40rem;
+    }
+
+    .animate__animated.animate__slideInUp {
+        width: 40rem;
+    }
+
+    .txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: 0.75;
+        width: 40rem;
+        margin-left: -5.25rem;
+    }
+
+    .para p {
+        margin-top: -2rem;
+        color: #fff;
+        width: 30rem;
+    }
+
+    .move {
+        margin-top: 5.2rem;
+    }
+
+    .contri {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        scale: 0.8;
+        column-gap: 5rem;
+        row-gap: 1rem;
+    }
+
+    #remove {
+        display: none;
+    }
+
+    .blob-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec2 {
+        scale: 0.6;
+    }
+
+    .next {
+        margin: 0;
+        scale: 0.85;
+    }
+
+    .sec3 {
+        scale: 0.6;
+        margin: 0;
+        margin-top: -5rem;
+    }
+
+    .next2 {
+        margin: 0;
+        scale: 0.85;
+    }
+
+    .container {
+        scale: 0.5;
+    }
+
+    .rel {
+        margin: 0;
+        margin: -10rem 0;
+    }
+
+    .foot {
+        padding: 1rem;
+    }
+
+    .logo, .media {
+        scale: 0.6;
+    }
+}
